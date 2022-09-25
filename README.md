@@ -86,7 +86,9 @@ const MyForm = () => {
 
     return (
         <form>
-            <div style="height: 400px">
+            <div style={{
+                height: "400px",
+              }}>
                 <Editor
                     onChange={(e) => {
                         setValue(e.target.value);
@@ -110,7 +112,9 @@ const MyForm = () => {
 
     return (
         <form>
-            <div style="height: 400px">
+            <div style={{
+                height: "400px",
+              }}>
                 <PreviewMarkdown>
                     {someMarkdown}
                 </PreviewMarkdown>
