@@ -4,6 +4,7 @@
     "private": true,
     "version": "0.0.0",
     "type": "module",
+    "main": "dist/index.js",
     "repository": {
         "type": "git",
         "url": "https://github.com/surajpheudin/react-markdown"
@@ -18,14 +19,18 @@
         "preview": "vite preview",
         "lint": "eslint --cache --fix",
         "format": "prettier --write .",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "publish-npm:beta": "npm publish --tag=next"
     },
-    "dependencies": {
+    "peerDependencies": {
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "vite-plugin-svgr": "^2.4.0"
     },
     "devDependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "vite-plugin-svgr": "^2.4.0",
         "@commitlint/cli": "^17.4.4",
         "@commitlint/config-conventional": "^17.4.4",
         "@types/react": "^18.0.27",
